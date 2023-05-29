@@ -13,7 +13,7 @@ const run = async () => {
   const result = await googleFormsToJson(
     'https://docs.google.com/forms/d/e/1FAIpQLScfbcwtpkwSph6xGc0qAmLVgwQRY5_BouLrgvdDhiXTmDZcxg/viewform'
   )
-  saveJsonToFile('form.json', result)
+  saveJsonToFile('googleForm.json', result)
 }
 
 run()
