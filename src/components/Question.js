@@ -1,14 +1,32 @@
 import React from 'react';
 
 class Question extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      title: '',
+      options: [],
+    }
+  }
+
+  componentDidMount() {
+    const { currentQuestion } = this.props;
+
+    this.setState({
+      title: currentQuestion.label,
+      options: currentQuestion.options,
+    });
+  }
+
   render() {
-    const { fields } = this.props;
+    const { title, options } = this.state;
 
     return (
       <div className='question'>
-        <h2>{ fields[0].label }</h2>
+        <h2>{ title }</h2>
         
-        { fields[0].options.map((option) => (
+        { options.map((option) => (
             <div>
               <input type="radio" id={ option.label } name='currentQuestion' value={ option.label }></input>
               <label>{ option.label }</label>
