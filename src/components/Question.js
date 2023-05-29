@@ -27,7 +27,7 @@ class Question extends React.Component {
         <h2>{ title }</h2>
         
         { options.map((option) => (
-            <div>
+            <div key={ option.label }>
               <input type="radio" id={ option.label } name='currentQuestion' value={ option.label }></input>
               <label>{ option.label }</label>
             </div>
