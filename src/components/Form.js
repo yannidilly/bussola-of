@@ -1,46 +1,35 @@
 import React from 'react';
+import { useContext } from 'react';
+import QuestionContext from '../context/QuestionContext'
 import Question from './Question';
 
-class Form extends React.Component {
-  constructor() {
-    super();
+function Form() {
+  const { question: { currentIndex }, setQuestion } = useContext(QuestionContext);
 
-    this.state = {
-      currentQuestionIndex: 0,
-    };
-  }
-
-  buttonClick = (event) => {
+  const buttonClick = (event) => {
     const { value } = event.target;
-    const { currentQuestionIndex } = this.state;
 
     if (value === 'prev') {
-      this.setState({
-        currentQuestionIndex: currentQuestionIndex - 1,
+      setQuestion({
+        currentIndex: currentIndex - 1,
       });
     }
     if (value === 'next') {
-      this.setState({
-        currentQuestionIndex: currentQuestionIndex + 1,
+      setQuestion({
+        currentIndex: currentIndex + 1,
       });
-
     }
   };
 
-  render() {
-    const { fields } = this.props;
-    const { currentQuestionIndex } = this.state;
-
-    return (
-      <form>
-        <Question currentQuestion={ fields[currentQuestionIndex] } />
-        <div>
-          <button type="button" onClick={ this.buttonClick } value='prev'>Anterior</button>
-          <button type="button" onClick={ this.buttonClick } value='next'>Próxima</button>
-        </div>
-      </form>
-    );
-  }
+  return (
+    <form>
+      <Question />
+      <div>
+        <button type="button" onClick={ buttonClick } value='prev'>Anterior</button>
+        <button type="button" onClick={ buttonClick } value='next'>Próxima</button>
+      </div>
+    </form>
+  );
 }
 
 export default Form;
