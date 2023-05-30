@@ -1,0 +1,12 @@
+.bussola-page {
+  background-image: url('../images/bussola-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  height: 94vh;
+}
+
+.bussola-page .intro-section {
+  margin: 50px;
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Mate&family=Raleway&display=swap');
 
 :root {
+  --text-dark: #28142e;
   --dark: #4a2555;
   --light: #fffffc;
   --primary-color: #b131f9;
@@ -13,7 +14,9 @@
 
 body {
   background-color: var(--light);
-  color: var(--dark);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -24,6 +27,6 @@ h2, h3, h4, h5, h6 {
   font-family: var(--sub-title);
 }
 
-p {
+p, button {
   font-family: var(--text);
 }
