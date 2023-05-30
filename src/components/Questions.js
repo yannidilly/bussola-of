@@ -4,6 +4,7 @@ import FormContext from '../context/FormContext';
 
 function Question() {
   const { form } = useContext(FormContext);
+  // adicionar useLinearInput do react-google-forms-hooks
 
   return (
     <div className='questions'>
@@ -13,7 +14,7 @@ function Question() {
             <h2>{ field.label }</h2>
             { field.options.map((option) => (
                 <div key={ option.label }>
-                  <input type="radio" id={ option.label } name='currentQuestion' value={ option.label }></input>
+                  <input type="radio" id={ option.label } name={ field.id } value={ option.label } />
                   <label>{ option.label }</label>
                 </div>
               )) }
