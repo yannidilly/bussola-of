@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import FormContext from '../context/FormContext';
 import Form from '../components/Form';
 
-function Home() {
+function Bussola() {
   const { form } = useContext(FormContext);
 
   return (
@@ -13,4 +13,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Bussola;

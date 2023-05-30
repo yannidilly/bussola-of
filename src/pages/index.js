@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './Home';
-import Result from './Result';
+import Bussola from './Bussola';
+import Norte from './Norte';
 
 function Pages() {
   return (
     <BrowserRouter>
-      <Route exact path="/" component={ Home } />
-      <Route exact path="/resultado" component={ Result } />
+      <Route exact path="/" component={ Bussola } />
+      <Route exact path="/norte" component={ Norte } />
     </BrowserRouter>
   );
 }
