@@ -47,30 +47,29 @@
   padding: 0 50px;
 }
 
-.linear-scale-question-component .select-options-div {
+.select-options-div {
   display: flex;
   justify-content: space-between;
   width: 75%;
 }
 
-.linear-scale-question-component .select-options-div span {
+.select-options-div span {
   font-size: 25px;
 }
 
-.linear-scale-question-component .select-options-bullets {
+.select-options-bullets {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 25px;
 }
 
-.linear-scale-question-component .select-options-bullets input {
+.select-options-bullets input {
   height: 20px;
   width: 20px;
-  border: 0;
 }
 
-.linear-scale-question-component .select-options-bullets label {
+.select-options-bullets label {
   margin-top: 10px;
 }
 
@@ -90,4 +89,44 @@
 .all-options-div {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .linear-scale-question-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linear-scale-question-component h2 {
+    font-size: 24px;
+    text-align: start;
+    padding: 0 20px;
+  }
+
+  .select-options-div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 70%;
+  }
+
+  .select-options-bullets-div {
+    align-self: self-start;
+    border: 1px solid blue;
+  }
+
+  .select-options-bullets-div hr {
+    margin-bottom: 0;
+    width: calc(100% - 30px);
+    background-color: white;
+    height: 2px;
+  }
+
+  .select-options-bullets {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    border: 1px solid green;
+  }
 }
