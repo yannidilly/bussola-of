@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import QuestionContext from '../context/QuestionContext';
 import { useLinearInput } from 'react-google-forms-hooks'
 
-function LinearScaleQuestion({ id }) {
-  const { options, legend, label, error } = useLinearInput(id)
+function LinearScaleQuestion({ id, index }) {
+  const { question: { currentIndex } } = useContext(QuestionContext);
+  
+  const { options, legend, label, error } = useLinearInput(id);
+
+  const visible = (index === currentIndex) ? '' : 'none'
 
   return (
     <>
-      <div className='linear-scale-question-component'>
-        <h2>{ label }</h2>
+      <div className='linear-scale-question-component' style={ { display: visible } } key={ id }>
+        <h2>{ `${index + 1}. ${label}` }</h2>
         <div className='select-options-div'>
           <span className='pouco'>{legend.labelFirst}</span>
           <div className='select-options-bullets-div'>
