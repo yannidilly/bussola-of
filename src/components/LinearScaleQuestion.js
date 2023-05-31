@@ -6,15 +6,20 @@ function LinearScaleQuestion({ id }) {
 
   return (
     <>
-      <div>
+      <div className='linear-scale-question-component'>
         <h2>{ label }</h2>
-        <div>{legend.labelFirst}</div>
-        {
-          options.map((option) => (
-            <input key={option.id} type='radio' {...option.registerOption()} />
-          ))
-        }
-        <div>{legend.labelLast}</div>
+        <div className='select-options-div'>
+          <span>{legend.labelFirst}</span>
+          {
+            options.map((option) => (
+              <div className='select-options-bullets'>
+                <input key={option.id} type='radio' {...option.registerOption()} />
+                <label>{ option.label }</label>
+              </div>
+            ))
+          }
+          <span>{legend.labelLast}</span>
+        </div>
       </div>
       <span>{error && 'Esse campo é obrigatório'}</span>
     </>
