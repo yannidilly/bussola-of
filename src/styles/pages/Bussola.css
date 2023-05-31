@@ -1,0 +1,151 @@
+.bussola-page {
+  background-image: url('../images/bussola-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bussola-page .intro-section {
+  padding: 0 10vw;
+}
+
+.bussola-page .intro-section h1 {
+  font-size: 40px;
+}
+
+.bussola-page .intro-section p {
+  font-size: 20px;
+}
+
+.bussola-page .intro-section button {
+  cursor: pointer;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  color: var(--light);
+  padding: 8px 20px;
+  border-radius: 18px;
+}
+
+.bussola-page form {
+  align-self: start;
+}
+
+.linear-scale-question-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linear-scale-question-component h2 {
+  font-size: 26px;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.select-options-div {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.select-options-div span {
+  font-size: 25px;
+}
+
+.select-options-bullets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+.select-options-bullets input {
+  height: 20px;
+  width: 20px;
+}
+
+.select-options-bullets label {
+  margin-top: 10px;
+}
+
+.select-options-bullets-div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.select-options-bullets-div hr {
+  margin-bottom: -14px;
+  width: calc(100% - 30px);
+  background-color: white;
+  height: 2px;
+}
+
+.all-options-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .linear-scale-question-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .linear-scale-question-component h2 {
+    font-size: 24px;
+    text-align: start;
+    padding: 0 20px;
+  }
+  
+  .select-options-div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+  }
+
+  .select-options-div .pouco {
+    margin-bottom: -35px;
+  }
+
+  .select-options-div .muito {
+    margin-top: -35px;
+  }
+
+  .select-options-bullets-div {
+    align-self: self-start;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .select-options-bullets-div hr {
+    width: 2px;
+    background-color: white;
+    height: 160px;
+    margin: 0;
+    margin-right: -17px;
+    min-height: calc(250px - 50px);
+  }
+
+  .all-options-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+  }
+
+  .select-options-bullets {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+  }
+}

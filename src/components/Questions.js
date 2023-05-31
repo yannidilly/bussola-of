@@ -9,8 +9,8 @@ function Question() {
   return (
     <div className='questions'>
       {
-        form.fields.map((field) => (
-          <LinearScaleQuestion id={field.id} key={field.id} />
+        form.fields.map((field, index) => (
+          <LinearScaleQuestion id={field.id} key={field.id} index={ index } />
         ))
       }
     </div>
