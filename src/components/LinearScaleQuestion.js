@@ -9,7 +9,7 @@ function LinearScaleQuestion({ id }) {
       <div className='linear-scale-question-component'>
         <h2>{ label }</h2>
         <div className='select-options-div'>
-          <span>{legend.labelFirst}</span>
+          <span className='pouco'>{legend.labelFirst}</span>
           <div className='select-options-bullets-div'>
             <hr />
             <div className='all-options-div'>
@@ -23,7 +23,7 @@ function LinearScaleQuestion({ id }) {
               }
             </div>
           </div>
-          <span>{legend.labelLast}</span>
+          <span className='muito'>{legend.labelLast}</span>
         </div>
       </div>
       <span>{error && 'Esse campo é obrigatório'}</span>
