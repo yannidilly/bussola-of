@@ -17,7 +17,7 @@ function LinearScaleQuestion({ id, index }) {
 
   return (
     <>
-      <div className='linear-scale-question-component' style={ { display: visible } } key={ id }>
+      <div className='linear-scale-question-component' style={ { display: visible } }>
         <h2>{ `${index + 1}. ${label}` }</h2>
         <div className='select-options-div'>
           <span className='pouco'>{legend.labelFirst}</span>
@@ -26,9 +26,8 @@ function LinearScaleQuestion({ id, index }) {
             <div className='all-options-div'>
               {
                 options.map((option) => (
-                  <div className='select-options-bullets'>
+                  <div key={option.id} className='select-options-bullets'>
                     <input
-                      key={option.id}
                       type='radio'
                       {...option.registerOption()}
                       onChange={ onInputSelect }
