@@ -10,14 +10,19 @@ function LinearScaleQuestion({ id }) {
         <h2>{ label }</h2>
         <div className='select-options-div'>
           <span>{legend.labelFirst}</span>
-          {
-            options.map((option) => (
-              <div className='select-options-bullets'>
-                <input key={option.id} type='radio' {...option.registerOption()} />
-                <label>{ option.label }</label>
-              </div>
-            ))
-          }
+          <div className='select-options-bullets-div'>
+            <hr />
+            <div className='all-options-div'>
+              {
+                options.map((option) => (
+                  <div className='select-options-bullets'>
+                    <input key={option.id} type='radio' {...option.registerOption()} />
+                    <label>{ option.label }</label>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
           <span>{legend.labelLast}</span>
         </div>
       </div>
