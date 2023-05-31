@@ -2,10 +2,12 @@ import React, { useContext } from 'react'
 import { GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks'
 import form from '../utils/googleForm.json';
 import QuestionContext from '../context/QuestionContext';
+import FormContext from '../context/FormContext';
 import Questions from './Questions';
 
 function Form() {
   const { question: { currentIndex } } = useContext(QuestionContext);
+  const { form: { fields } } = useContext(FormContext);
 
   const methods = useGoogleForm({ form })
   const onSubmit = async (data) => {
@@ -20,7 +22,7 @@ function Form() {
         <Questions />
         <div>
           {
-            (currentIndex > 36) ? (
+            (currentIndex >= fields.length) ? (
               <div>
                 <p>Você terminou o teste</p>
                 <button type='submit'>Finalizar</button>

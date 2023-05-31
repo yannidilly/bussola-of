@@ -7,7 +7,7 @@ function LinearScaleQuestion({ id, index }) {
   
   const { options, legend, label, error } = useLinearInput(id);
 
-  const visible = (index === currentIndex) ? '' : 'none'
+  const visible = (index === currentIndex) ? '' : 'none';
 
   const onInputSelect = () => {
     setQuestion({
@@ -27,7 +27,12 @@ function LinearScaleQuestion({ id, index }) {
               {
                 options.map((option) => (
                   <div className='select-options-bullets'>
-                    <input key={option.id} type='radio' {...option.registerOption()} onChange={ onInputSelect } />
+                    <input
+                      key={option.id}
+                      type='radio'
+                      {...option.registerOption()}
+                      onChange={ onInputSelect }
+                    />
                     <label>{ option.label }</label>
                   </div>
                 ))
