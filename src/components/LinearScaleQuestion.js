@@ -3,11 +3,17 @@ import QuestionContext from '../context/QuestionContext';
 import { useLinearInput } from 'react-google-forms-hooks'
 
 function LinearScaleQuestion({ id, index }) {
-  const { question: { currentIndex } } = useContext(QuestionContext);
+  const { question: { currentIndex }, setQuestion } = useContext(QuestionContext);
   
   const { options, legend, label, error } = useLinearInput(id);
 
   const visible = (index === currentIndex) ? '' : 'none'
+
+  const onInputSelect = () => {
+    setQuestion({
+      currentIndex: index + 1,
+    });
+  }
 
   return (
     <>
@@ -21,7 +27,7 @@ function LinearScaleQuestion({ id, index }) {
               {
                 options.map((option) => (
                   <div className='select-options-bullets'>
-                    <input key={option.id} type='radio' {...option.registerOption()} />
+                    <input key={option.id} type='radio' {...option.registerOption()} onChange={ onInputSelect } />
                     <label>{ option.label }</label>
                   </div>
                 ))
