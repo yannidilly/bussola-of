@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Bussola from './Bussola';
+import Bussola from './Bussola/index';
 import Norte from './Norte';
 import Pesquisa from './Pesquisa';
 

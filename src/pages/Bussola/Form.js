@@ -1,17 +1,18 @@
 import React, { useContext } from 'react'
 import { GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks'
 import { useHistory } from 'react-router-dom';
-import form from '../utils/googleForm.json';
-import QuestionContext from '../context/QuestionContext';
-import FormContext from '../context/FormContext';
-import Questions from './Questions';
+import bussolaForm from '../../utils/bussolaForm.json';
+import QuestionContext from '../../context/QuestionContext';
+import FormContext from '../../context/FormContext';
+import Questions from '../../components/Questions';
 
 function Form() {
   const { question: { currentIndex } } = useContext(QuestionContext);
   const { form: { fields } } = useContext(FormContext);
   const history = useHistory();
 
-  const methods = useGoogleForm({ form })
+  const methods = useGoogleForm({ form: bussolaForm });
+
   const onSubmit = async (data) => {
     await methods.submitToGoogleForms(data);
     history.push('/pesquisa');

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
-import FormContext from '../context/FormContext';
-import Form from '../components/Form';
-import '../styles/pages/Bussola.css';
+import FormContext from '../../context/FormContext';
+import Form from './Form';
+import '../../styles/pages/Bussola.css';
 
 function Bussola() {
   const { form } = useContext(FormContext);
