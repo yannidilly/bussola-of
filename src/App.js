@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import googleForm from './utils/googleForm.json';
+import bussolaForm from './utils/bussolaForm.json';
 import QuestionContext from './context/QuestionContext';
 import FormContext from './context/FormContext';
 import Pages from './pages';
 
 function App() {
-  const [form, setForm] = useState({ ...googleForm });
+  const [form, setForm] = useState({ ...bussolaForm });
   const [question, setQuestion] = useState({ currentIndex: 0 });
 
   return (
