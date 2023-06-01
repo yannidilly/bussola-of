@@ -157,3 +157,20 @@
     width: 95vw;
   }
 }
+
+.finish-bussola-form-div {
+  margin: 5vw;
+}
+
+.finish-bussola-form-button {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--light);
+  padding: 8px 18px;
+  border-radius: 18px;
+}
+
+.finish-bussola-form-div p {
+  font-size: 18px;
+}

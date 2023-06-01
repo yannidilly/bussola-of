@@ -11,7 +11,6 @@ function Form() {
 
   const methods = useGoogleForm({ form })
   const onSubmit = async (data) => {
-    console.log('>>> Here is the data', data)
     await methods.submitToGoogleForms(data)
     alert('Form submitted with success!')
   }
@@ -23,9 +22,17 @@ function Form() {
         <div>
           {
             (currentIndex >= fields.length) ? (
-              <div>
-                <p>Você terminou o teste</p>
-                <button type='submit'>Finalizar</button>
+              <div className='finish-bussola-form-div'>
+                <p>
+                  Você está um passo mais perto de descobrir o que tem norteado sua Jornada Financeira até hoje.
+                </p>
+                <p>
+                  Lembre-se de que conhecer seu Norte é o primeiro passo para tomar decisões mais informadas e alcançar seus objetivos financeiros.
+                </p>
+                <p>
+                  Clique no botão abaixo para descobrir seu Norte financeiro.
+                </p>
+                <button className='finish-bussola-form-button' type='submit'>Descobrir</button>
               </div>
             ) : (
               <></>
