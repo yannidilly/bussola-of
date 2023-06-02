@@ -21,7 +21,7 @@ function Form() {
   return (
     <GoogleFormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <Questions />
+        <Questions fields={ fields } />
         <div>
           {
             (currentIndex >= fields.length) ? (
