@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
-import FormContext from '../../context/FormContext';
+import BussolaContext from '../../context/BussolaContext';
 import Form from './Form';
 import '../../styles/pages/Bussola.css';
 
 function Bussola() {
-  const { form } = useContext(FormContext);
+  const { form } = useContext(BussolaContext);
   const [start, setStart] = useState(false);
 
   const onClickStartButton = () => {

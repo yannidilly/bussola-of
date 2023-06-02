@@ -1,10 +1,10 @@
 import React from 'react';
 import { useContext } from 'react';
-import FormContext from '../context/FormContext';
+import BussolaContext from '../context/BussolaContext';
 import LinearScaleQuestion from './LinearScaleQuestion';
 
 function Question() {
-  const { form } = useContext(FormContext);
+  const { form } = useContext(BussolaContext);
 
   return (
     <div className='questions'>

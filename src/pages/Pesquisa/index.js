@@ -1,14 +1,12 @@
-import React, { useContext } from 'react';
-import FormContext from '../../context/FormContext';
+import React from 'react';
 import Form from './Form';
 
 function Pesquisa() {
-  const { form } = useContext(FormContext);
 
 
   return (
     <div className='pesquisa-page'>
-      <h1>{ form.title }</h1>
+      <h1>Bússola</h1>
       <Form>
 
       </Form>

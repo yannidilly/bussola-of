@@ -3,12 +3,12 @@ import { GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks'
 import { useHistory } from 'react-router-dom';
 import bussolaForm from '../../utils/bussolaForm.json';
 import QuestionContext from '../../context/QuestionContext';
-import FormContext from '../../context/FormContext';
+import BussolaContext from '../../context/BussolaContext';
 import Questions from '../../components/Questions';
 
 function Form() {
   const { question: { currentIndex } } = useContext(QuestionContext);
-  const { form: { fields } } = useContext(FormContext);
+  const { form: { fields } } = useContext(BussolaContext);
   const history = useHistory();
 
   const methods = useGoogleForm({ form: bussolaForm });
