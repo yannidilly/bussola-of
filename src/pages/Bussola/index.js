@@ -4,7 +4,7 @@ import Form from './Form';
 import '../../styles/pages/Bussola.css';
 
 function Bussola() {
-  const { form } = useContext(BussolaContext);
+  const { bussolaForm } = useContext(BussolaContext);
   const [start, setStart] = useState(false);
 
   const onClickStartButton = () => {
@@ -16,7 +16,7 @@ function Bussola() {
       {
         (!start) ? (
           <div className='intro-section'>
-            <h1>{ form.title }</h1>
+            <h1>{ bussolaForm.title }</h1>
             <p>Leia cada pergunta com atenção antes de responder.</p>
             <p>Marque 1 se não se identificar com a frase e 5 se tiver uma forte identificação.</p>
             <p>Lembre-se de que não é possível voltar atrás após selecionar uma resposta.</p>

@@ -4,12 +4,12 @@ import BussolaContext from '../context/BussolaContext';
 import LinearScaleQuestion from './LinearScaleQuestion';
 
 function Question() {
-  const { form } = useContext(BussolaContext);
+  const { bussolaForm } = useContext(BussolaContext);
 
   return (
     <div className='questions'>
       {
-        form.fields.map((field, index) => (
+        bussolaForm.fields.map((field, index) => (
           <LinearScaleQuestion id={field.id} key={field.id} index={ index } />
         ))
       }
