@@ -28,11 +28,12 @@ function LinearScale({ id, index }) {
                 options.map((option) => (
                   <div key={option.id} className='select-options-bullets'>
                     <input
+                    id={option.id}
                       type='radio'
                       {...option.registerOption()}
                       onChange={ onInputSelect }
                     />
-                    <label>{ option.label }</label>
+                    <label htmlFor={option.id}>{ option.label }</label>
                   </div>
                 ))
               }

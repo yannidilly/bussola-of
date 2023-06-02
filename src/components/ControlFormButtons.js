@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import QuestionContext from '../context/QuestionContext'
 
-function ControlFormButtons() {
+function ControlFormButtons({ disable } = { disable: false }) {
   const { question: { currentIndex }, setQuestion } = useContext(QuestionContext);
 
   const buttonClick = (event) => {
@@ -21,7 +21,7 @@ function ControlFormButtons() {
   return (
     <div>
       <button type="button" onClick={ buttonClick } value='prev'>Anterior</button>
-      <button type="button" onClick={ buttonClick } value='next'>Próxima</button>
+      <button type="button" onClick={ buttonClick } value='next' disabled={ disable }>Próxima</button>
     </div>
   );
 }
