@@ -1,1 +1,414 @@
-{"fvv":1,"pageHistory":0,"fbzx":"4295570224145377476","action":"e/1FAIpQLSc4L7PyKgGy2W578Eaiam85MzpZDlP8rTV7R922B012ZNbihw","title":"","description":"","fields":[{"label":"Qual a sua idade?","description":null,"type":"RADIO","id":"2107713305","options":[{"label":"18 a 24 anos","custom":false},{"label":"25 a 34 anos","custom":false},{"label":"35 a 44 anos","custom":false},{"label":"45 a 54 anos","custom":false},{"label":"55 a 64 anos","custom":false},{"label":"65 a 74 anos","custom":false},{"label":"mais de 75 anos","custom":false}],"required":true},{"label":"Qual é o seu gênero?","description":null,"type":"RADIO","id":"512991194","options":[{"label":"Masculino","custom":false},{"label":"Feminino","custom":false},{"label":"Outro","custom":false}],"required":true},{"label":"Você tem filhos?","description":null,"type":"RADIO","id":"2106609234","options":[{"label":"Não","custom":false},{"label":"1 filho/a","custom":false},{"label":"2 filhos","custom":false},{"label":"3 filhos","custom":false},{"label":"Mais de 3 filhos","custom":false}],"required":true},{"label":"Como é sua situação conjulgal?","description":null,"type":"RADIO","id":"1715529643","options":[{"label":"Moro sozinha(o)","custom":false},{"label":"Moro junto, mas não sou casada(o) no papel","custom":false},{"label":"Sou casada(o) no papel","custom":false},{"label":"Sou divorciada(o) e recebo pensão","custom":false},{"label":"Sou divorciada(o), mas não recebo pensão","custom":false},{"label":"Sou viúva(o) e recebo pensão","custom":false},{"label":"Sou viúva(o) e não recebo pensão","custom":false},{"label":"Divido apartamento ou casa","custom":false},{"label":"","custom":true}],"required":true},{"label":"Com o que você trabalha?","description":null,"type":"SHORT_ANSWER","id":"1041702169","required":true},{"label":"Quanto, aproximadamente, você ganha por mês?","description":null,"type":"RADIO","id":"804066051","options":[{"label":"Até R$ 954","custom":false},{"label":"De R$ 955 a R$ 1.908","custom":false},{"label":"De R$ 1.909 a R$ 2.862","custom":false},{"label":"De R$ 2.863 a R$ 4.770","custom":false},{"label":"De R$ 4.771 a R$ 9.540","custom":false},{"label":"De R$ 9.541 a R$ 14.310","custom":false},{"label":"Acima de R$ 14.310","custom":false}],"required":true},{"label":"Hoje, você depende da renda de outra pessoa para se sustentar?","description":null,"type":"RADIO","id":"574458035","options":[{"label":"Meus pais me ajudam","custom":false},{"label":"Meu marido me ajuda","custom":false},{"label":"Minha esposa me ajuda","custom":false},{"label":"Recebo pensão","custom":false},{"label":"Consigo me sustentar sozinha(o)","custom":false},{"label":"","custom":true}],"required":true},{"label":"Você possui dividas?","description":null,"type":"RADIO","id":"1368999522","options":[{"label":"Sim, uma pequena dívida","custom":false},{"label":"Sim, uma grande dívida","custom":false},{"label":"Não","custom":false},{"label":"Não sei","custom":false}],"required":true},{"label":"Antes de investir no curso Descomplicando Finanças para MEI, você já havia tentado se organizar financeiramente?","description":null,"type":"RADIO","id":"1119777441","options":[{"label":"Não","custom":false},{"label":"Sim, tentei sozinha(o)","custom":false},{"label":"Sim, procurei métodos gratuitos na internet","custom":false},{"label":"Sim, comprei outros cursos de organização financeira","custom":false}],"required":true},{"label":"Qual foi sua maior dificuldade na hora de colocar em prática esses outros métodos de organização financeira?","description":null,"type":"LONG_ANSWER","id":"1718089705","required":true},{"label":"Qual o seu maior desafio na sua organização financeira hoje?","description":null,"type":"LONG_ANSWER","id":"1486115605","required":true},{"label":"Qual o seu maior sonho financeiro?","description":null,"type":"LONG_ANSWER","id":"1910993206","required":true},{"label":"Se você pudesse tomar um café comigo durante 15 minutos, qual pergunta me faria que poderia mudar sua vida?","description":null,"type":"LONG_ANSWER","id":"1639409102","required":false},{"label":"Por que organização financeira é importante para você?","description":null,"type":"LONG_ANSWER","id":"829322755","required":true},{"label":"O método ensinado no curso vai fazer com que você economize tempo na hora de colocar suas finanças em ordem, com o que você pretende gastar esse tempo?","description":null,"type":"RADIO","id":"866717600","options":[{"label":"Família","custom":false},{"label":"Trabalho","custom":false},{"label":"Viagens","custom":false},{"label":"Tempo para mim","custom":false},{"label":"Estudos","custom":false},{"label":"","custom":true}],"required":true},{"label":"O que te fez investir na Jornada da Organização Financeira?","description":null,"type":"LONG_ANSWER","id":"498119366","required":true},{"label":"Você tem algum plano para se aposentar?","description":null,"type":"RADIO","id":"326162549","options":[{"label":"Apenas a ajuda do governo","custom":false},{"label":"Não ligo para isso","custom":false},{"label":"Quero me preparar, mas não sei como","custom":false},{"label":"Estou me preparando para isso","custom":false}],"required":true},{"label":"Você conhece de investimentos?","description":null,"type":"RADIO","id":"2075756006","options":[{"label":"Conheço bastante","custom":false},{"label":"Já estudei um pouco, mas não sei muito","custom":false},{"label":"Nunca estudei a respeito","custom":false},{"label":"Apenas as coisas que já ouvi conhecidos falando","custom":false}],"required":true}],"fieldsOrder":{"326162549":16,"498119366":15,"512991194":1,"574458035":6,"804066051":5,"829322755":13,"866717600":14,"1041702169":4,"1119777441":8,"1368999522":7,"1486115605":10,"1639409102":12,"1715529643":3,"1718089705":9,"1910993206":11,"2075756006":17,"2106609234":2,"2107713305":0}}
+{
+  "fvv": 1,
+  "pageHistory": 0,
+  "fbzx": "4295570224145377476",
+  "action": "e/1FAIpQLSc4L7PyKgGy2W578Eaiam85MzpZDlP8rTV7R922B012ZNbihw",
+  "title": "",
+  "description": "",
+  "fields": [
+    {
+      "label": "Qual a sua idade?",
+      "description": null,
+      "type": "RADIO",
+      "id": "2107713305",
+      "options": [
+        {
+          "label": "18 a 24 anos",
+          "custom": false
+        },
+        {
+          "label": "25 a 34 anos",
+          "custom": false
+        },
+        {
+          "label": "35 a 44 anos",
+          "custom": false
+        },
+        {
+          "label": "45 a 54 anos",
+          "custom": false
+        },
+        {
+          "label": "55 a 64 anos",
+          "custom": false
+        },
+        {
+          "label": "65 a 74 anos",
+          "custom": false
+        },
+        {
+          "label": "mais de 75 anos",
+          "custom": false
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Qual é o seu gênero?",
+      "description": null,
+      "type": "RADIO",
+      "id": "512991194",
+      "options": [
+        {
+          "label": "Masculino",
+          "custom": false
+        },
+        {
+          "label": "Feminino",
+          "custom": false
+        },
+        {
+          "label": "Outro",
+          "custom": false
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Você tem filhos?",
+      "description": null,
+      "type": "RADIO",
+      "id": "2106609234",
+      "options": [
+        {
+          "label": "Não",
+          "custom": false
+        },
+        {
+          "label": "1 filho/a",
+          "custom": false
+        },
+        {
+          "label": "2 filhos",
+          "custom": false
+        },
+        {
+          "label": "3 filhos",
+          "custom": false
+        },
+        {
+          "label": "Mais de 3 filhos",
+          "custom": false
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Como é sua situação conjulgal?",
+      "description": null,
+      "type": "RADIO",
+      "id": "1715529643",
+      "options": [
+        {
+          "label": "Moro sozinha(o)",
+          "custom": false
+        },
+        {
+          "label": "Moro junto, mas não sou casada(o) no papel",
+          "custom": false
+        },
+        {
+          "label": "Sou casada(o) no papel",
+          "custom": false
+        },
+        {
+          "label": "Sou divorciada(o) e recebo pensão",
+          "custom": false
+        },
+        {
+          "label": "Sou divorciada(o), mas não recebo pensão",
+          "custom": false
+        },
+        {
+          "label": "Sou viúva(o) e recebo pensão",
+          "custom": false
+        },
+        {
+          "label": "Sou viúva(o) e não recebo pensão",
+          "custom": false
+        },
+        {
+          "label": "Divido apartamento ou casa",
+          "custom": false
+        },
+        {
+          "label": "",
+          "custom": true
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Com o que você trabalha?",
+      "description": null,
+      "type": "SHORT_ANSWER",
+      "id": "1041702169",
+      "required": true
+    },
+    {
+      "label": "Quanto, aproximadamente, você ganha por mês?",
+      "description": null,
+      "type": "RADIO",
+      "id": "804066051",
+      "options": [
+        {
+          "label": "Até R$ 954",
+          "custom": false
+        },
+        {
+          "label": "De R$ 955 a R$ 1.908",
+          "custom": false
+        },
+        {
+          "label": "De R$ 1.909 a R$ 2.862",
+          "custom": false
+        },
+        {
+          "label": "De R$ 2.863 a R$ 4.770",
+          "custom": false
+        },
+        {
+          "label": "De R$ 4.771 a R$ 9.540",
+          "custom": false
+        },
+        {
+          "label": "De R$ 9.541 a R$ 14.310",
+          "custom": false
+        },
+        {
+          "label": "Acima de R$ 14.310",
+          "custom": false
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Hoje, você depende da renda de outra pessoa para se sustentar?",
+      "description": null,
+      "type": "RADIO",
+      "id": "574458035",
+      "options": [
+        {
+          "label": "Meus pais me ajudam",
+          "custom": false
+        },
+        {
+          "label": "Meu marido me ajuda",
+          "custom": false
+        },
+        {
+          "label": "Minha esposa me ajuda",
+          "custom": false
+        },
+        {
+          "label": "Recebo pensão",
+          "custom": false
+        },
+        {
+          "label": "Consigo me sustentar sozinha(o)",
+          "custom": false
+        },
+        {
+          "label": "",
+          "custom": true
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Você possui dividas?",
+      "description": null,
+      "type": "RADIO",
+      "id": "1368999522",
+      "options": [
+        {
+          "label": "Sim, uma pequena dívida",
+          "custom": false
+        },
+        {
+          "label": "Sim, uma grande dívida",
+          "custom": false
+        },
+        {
+          "label": "Não",
+          "custom": false
+        },
+        {
+          "label": "Não sei",
+          "custom": false
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Antes de investir no curso Descomplicando Finanças para MEI, você já havia tentado se organizar financeiramente?",
+      "description": null,
+      "type": "RADIO",
+      "id": "1119777441",
+      "options": [
+        {
+          "label": "Não",
+          "custom": false
+        },
+        {
+          "label": "Sim, tentei sozinha(o)",
+          "custom": false
+        },
+        {
+          "label": "Sim, procurei métodos gratuitos na internet",
+          "custom": false
+        },
+        {
+          "label": "Sim, comprei outros cursos de organização financeira",
+          "custom": false
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Qual foi sua maior dificuldade na hora de colocar em prática esses outros métodos de organização financeira?",
+      "description": null,
+      "type": "LONG_ANSWER",
+      "id": "1718089705",
+      "required": true
+    },
+    {
+      "label": "Qual o seu maior desafio na sua organização financeira hoje?",
+      "description": null,
+      "type": "LONG_ANSWER",
+      "id": "1486115605",
+      "required": true
+    },
+    {
+      "label": "Qual o seu maior sonho financeiro?",
+      "description": null,
+      "type": "LONG_ANSWER",
+      "id": "1910993206",
+      "required": true
+    },
+    {
+      "label": "Se você pudesse tomar um café comigo durante 15 minutos, qual pergunta me faria que poderia mudar sua vida?",
+      "description": null,
+      "type": "LONG_ANSWER",
+      "id": "1639409102",
+      "required": false
+    },
+    {
+      "label": "Por que organização financeira é importante para você?",
+      "description": null,
+      "type": "LONG_ANSWER",
+      "id": "829322755",
+      "required": true
+    },
+    {
+      "label": "O método ensinado no curso vai fazer com que você economize tempo na hora de colocar suas finanças em ordem, com o que você pretende gastar esse tempo?",
+      "description": null,
+      "type": "RADIO",
+      "id": "866717600",
+      "options": [
+        {
+          "label": "Família",
+          "custom": false
+        },
+        {
+          "label": "Trabalho",
+          "custom": false
+        },
+        {
+          "label": "Viagens",
+          "custom": false
+        },
+        {
+          "label": "Tempo para mim",
+          "custom": false
+        },
+        {
+          "label": "Estudos",
+          "custom": false
+        },
+        {
+          "label": "",
+          "custom": true
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "O que te fez investir na Jornada da Organização Financeira?",
+      "description": null,
+      "type": "LONG_ANSWER",
+      "id": "498119366",
+      "required": true
+    },
+    {
+      "label": "Você tem algum plano para se aposentar?",
+      "description": null,
+      "type": "RADIO",
+      "id": "326162549",
+      "options": [
+        {
+          "label": "Apenas a ajuda do governo",
+          "custom": false
+        },
+        {
+          "label": "Não ligo para isso",
+          "custom": false
+        },
+        {
+          "label": "Quero me preparar, mas não sei como",
+          "custom": false
+        },
+        {
+          "label": "Estou me preparando para isso",
+          "custom": false
+        }
+      ],
+      "required": true
+    },
+    {
+      "label": "Você conhece de investimentos?",
+      "description": null,
+      "type": "RADIO",
+      "id": "2075756006",
+      "options": [
+        {
+          "label": "Conheço bastante",
+          "custom": false
+        },
+        {
+          "label": "Já estudei um pouco, mas não sei muito",
+          "custom": false
+        },
+        {
+          "label": "Nunca estudei a respeito",
+          "custom": false
+        },
+        {
+          "label": "Apenas as coisas que já ouvi conhecidos falando",
+          "custom": false
+        }
+      ],
+      "required": true
+    }
+  ],
+  "fieldsOrder": {
+    "326162549": 16,
+    "498119366": 15,
+    "512991194": 1,
+    "574458035": 6,
+    "804066051": 5,
+    "829322755": 13,
+    "866717600": 14,
+    "1041702169": 4,
+    "1119777441": 8,
+    "1368999522": 7,
+    "1486115605": 10,
+    "1639409102": 12,
+    "1715529643": 3,
+    "1718089705": 9,
+    "1910993206": 11,
+    "2075756006": 17,
+    "2106609234": 2,
+    "2107713305": 0
+  }
+}
