@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import LinearScale from './inputs/LinearScale';
 import Radio from './inputs/Radio';
 import ShortAnswer from './inputs/ShortAnswer';
 import LongAnswer from './inputs/LongAnswer';
+import QuestionContext from '../context/QuestionContext';
 
 function Question({ fields }) {
+  const { setQuestion } = useContext(QuestionContext);
+
+  useEffect(() => {
+    setQuestion({ currentIndex: 0 });
+  }, [setQuestion]);
+
   const fieldType = (field, index) => {
     let input = <></>;
     switch (field.type) {
