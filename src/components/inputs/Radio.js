@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react'
+import QuestionContext from '../../context/QuestionContext';
+import ControlFormButtons from '../ControlFormButtons';
 
-function Radio() {
+function Radio({ id, index }) {
+  const { question: { currentIndex } } = useContext(QuestionContext);
+
+  const visible = (index === currentIndex) ? '' : 'none';
+
   return (
-    <div>Radio</div>
+    <div style={ { display: visible } }>
+      <p>Radio</p>
+      <ControlFormButtons />
+    </div>
   )
 }
 
