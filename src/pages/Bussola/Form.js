@@ -1,38 +1,38 @@
 import React, { useContext } from 'react'
 import { GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks'
-import form from '../utils/googleForm.json';
-import QuestionContext from '../context/QuestionContext';
-import FormContext from '../context/FormContext';
-import Questions from './Questions';
+import { useHistory } from 'react-router-dom';
+import bussolaFormData from '../../utils/bussolaForm.json';
+import QuestionContext from '../../context/QuestionContext';
+import BussolaContext from '../../context/BussolaContext';
+import Questions from '../../components/Questions';
 
 function Form() {
   const { question: { currentIndex } } = useContext(QuestionContext);
-  const { form: { fields } } = useContext(FormContext);
+  const { bussolaForm: { fields } } = useContext(BussolaContext);
+  const history = useHistory();
 
-  const methods = useGoogleForm({ form })
+  const methods = useGoogleForm({ form: bussolaFormData });
+
   const onSubmit = async (data) => {
-    await methods.submitToGoogleForms(data)
-    alert('Form submitted with success!')
-  }
+    await methods.submitToGoogleForms(data);
+    history.push('/pesquisa');
+  };
 
   return (
     <GoogleFormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <Questions />
+        <Questions fields={ fields } />
         <div>
           {
             (currentIndex >= fields.length) ? (
               <div className='finish-bussola-form-div'>
                 <p>
-                  Você está um passo mais perto de descobrir o que tem norteado sua Jornada Financeira até hoje.
+                  Você está a um passo de descobrir o que tem norteado sua Jornada Financeira até hoje.
                 </p>
                 <p>
                   Lembre-se de que conhecer seu Norte é o primeiro passo para tomar decisões mais informadas e alcançar seus objetivos financeiros.
                 </p>
-                <p>
-                  Clique no botão abaixo para descobrir seu Norte financeiro.
-                </p>
-                <button className='finish-bussola-form-button' type='submit'>Descobrir</button>
+                <button className='finish-bussola-form-button' type='submit'>Próximo Passo</button>
               </div>
             ) : (
               <></>

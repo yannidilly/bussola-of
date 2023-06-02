@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import QuestionContext from '../context/QuestionContext';
+import QuestionContext from '../../context/QuestionContext';
 import { useLinearInput } from 'react-google-forms-hooks'
 
-function LinearScaleQuestion({ id, index }) {
+function LinearScale({ id, index }) {
   const { question: { currentIndex }, setQuestion } = useContext(QuestionContext);
   
   const { options, legend, label, error } = useLinearInput(id);
@@ -28,11 +28,12 @@ function LinearScaleQuestion({ id, index }) {
                 options.map((option) => (
                   <div key={option.id} className='select-options-bullets'>
                     <input
+                    id={option.id}
                       type='radio'
                       {...option.registerOption()}
                       onChange={ onInputSelect }
                     />
-                    <label>{ option.label }</label>
+                    <label htmlFor={option.id}>{ option.label }</label>
                   </div>
                 ))
               }
@@ -46,4 +47,4 @@ function LinearScaleQuestion({ id, index }) {
   )
 }
 
-export default LinearScaleQuestion;
+export default LinearScale;

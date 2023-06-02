@@ -9,11 +9,17 @@ const saveJsonToFile = (filename, json) => {
   })
 }
 
-const run = async () => {
-  const result = await googleFormsToJson(
-    'https://docs.google.com/forms/d/e/1FAIpQLScfbcwtpkwSph6xGc0qAmLVgwQRY5_BouLrgvdDhiXTmDZcxg/viewform'
-  )
-  saveJsonToFile('googleForm.json', result)
+const generate = async (url, name) => {
+  const result = await googleFormsToJson(url);
+  saveJsonToFile(name+'.json', result)
 }
 
-run()
+generate(
+  'https://docs.google.com/forms/d/e/1FAIpQLScfbcwtpkwSph6xGc0qAmLVgwQRY5_BouLrgvdDhiXTmDZcxg/viewform',
+  'bussolaForm'
+);
+
+generate(
+  'https://docs.google.com/forms/d/e/1FAIpQLSc4L7PyKgGy2W578Eaiam85MzpZDlP8rTV7R922B012ZNbihw/viewform',
+  'pesquisaForm'
+);
