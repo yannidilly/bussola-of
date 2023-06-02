@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks';
-import pesquisaForm from '../../utils/pesquisaForm.json';
+import pesquisaFormData from '../../utils/pesquisaForm.json';
+import Questions from '../../components/Questions';
+import PesquisaContext from '../../context/PesquisaContext';
 
 function Form() {
+  const { pesquisaForm: { fields } } = useContext(PesquisaContext);
 
-  const methods = useGoogleForm({ form: pesquisaForm });
+  const methods = useGoogleForm({ form: pesquisaFormData });
 
   const onSubmit = async (data) => {
     await methods.submitToGoogleForms(data);
@@ -14,7 +17,7 @@ function Form() {
   return (
     <GoogleFormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <p>oi</p>
+        <Questions fields={ fields }/>
         <button className='finish-bussola-form-button' type='submit'>Finalizar</button>
       </form>
     </GoogleFormProvider>
