@@ -22,7 +22,7 @@ const formatFormAnswer = (data) => {
   const CD = answersNotNull.filter((answer) => answer.type === 'CD')
     .reduce((acc, cur) => (Number(acc) + Number(cur.value)), 0);
   const CF = answersNotNull.filter((answer) => answer.type === 'CF')
-    .reduce((acc, cur) => (Number(acc) + Number(cur.value)), 0);
+    .reduce((acc, cur) => (Number(acc) + Number(cur.value)), 0) * 1.6;
   return { SP, PG, EMD, CD, CF };
 }
 

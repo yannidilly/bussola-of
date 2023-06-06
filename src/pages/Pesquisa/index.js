@@ -9,6 +9,9 @@ function Pesquisa() {
     if (JSON.parse(localStorage.getItem('pesquisa')) !== null) {
       history.push('/norte');
     }
+    if (!localStorage.getItem('points')) {
+      history.push('/');
+    }
   });
 
   return (
