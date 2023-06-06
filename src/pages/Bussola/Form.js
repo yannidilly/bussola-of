@@ -18,6 +18,7 @@ function Form() {
 
   const onSubmit = async (data) => {
     const formatedData = formatFormAnswer(data);
+    localStorage.setItem('points', JSON.stringify(formatedData));
     await setPoints(formatedData);
     await methods.submitToGoogleForms(data);
     history.push('/pesquisa');
