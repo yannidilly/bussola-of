@@ -14,6 +14,7 @@ function Form() {
   const methods = useGoogleForm({ form: pesquisaFormData });
 
   const onSubmit = async (data) => {
+    localStorage.setItem('pesquisa', JSON.stringify('preenchida'));
     await methods.submitToGoogleForms(data);
     history.push('/norte');
   };

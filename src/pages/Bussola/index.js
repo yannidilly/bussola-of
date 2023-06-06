@@ -1,11 +1,19 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import BussolaContext from '../../context/BussolaContext';
 import Form from './Form';
 import '../../styles/pages/Bussola.css';
+import { useHistory } from 'react-router-dom';
 
 function Bussola() {
   const { bussolaForm } = useContext(BussolaContext);
   const [start, setStart] = useState(false);
+  const history = useHistory();
+
+  useEffect(() => {
+    if (JSON.parse(localStorage.getItem('points')) !== null) {
+      history.push('/pesquisa');
+    }
+  });
 
   const onClickStartButton = () => {
     setStart(true);

@@ -5,15 +5,21 @@ import bussolaFormData from '../../utils/bussolaForm.json';
 import QuestionContext from '../../context/QuestionContext';
 import BussolaContext from '../../context/BussolaContext';
 import Questions from '../../components/Questions';
+import PointsContext from '../../context/PointsContext';
+import formatFormAnswer from '../../utils/formatFormAnswer';
 
 function Form() {
   const { question: { currentIndex } } = useContext(QuestionContext);
   const { bussolaForm: { fields } } = useContext(BussolaContext);
+  const { setPoints } = useContext(PointsContext);
   const history = useHistory();
 
   const methods = useGoogleForm({ form: bussolaFormData });
 
   const onSubmit = async (data) => {
+    const formatedData = formatFormAnswer(data);
+    localStorage.setItem('points', JSON.stringify(formatedData));
+    await setPoints(formatedData);
     await methods.submitToGoogleForms(data);
     history.push('/pesquisa');
   };
