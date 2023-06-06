@@ -5,11 +5,11 @@ function Points() {
 
   return (
     <div className="points">
-      <p>{ `Segurança: ${points.SP}` }</p>
-      <p>{ `Prazer: ${points.PG}` }</p>
-      <p>{ `Emoções Momentâneas: ${points.EMD}` }</p>
-      <p>{ `Conformidade: ${points.CD}` }</p>
-      <p>{ `Controle: ${points.CF}` }</p>
+      <p><a href='/norte/SP'>{ `Segurança: ${points.SP}` }</a></p>
+      <p><a href='/norte/PG'>{ `Prazer: ${points.PG}` }</a></p>
+      <p><a href='/norte/EMD'>{ `Emoções Momentâneas: ${points.EMD}` }</a></p>
+      <p><a href="/norte/CD">{ `Conformidade: ${points.CD}` }</a></p>
+      <p><a href="/norte/CF">{ `Controle: ${points.CF}` }</a></p>
     </div>
   )
 }
