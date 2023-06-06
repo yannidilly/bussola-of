@@ -8,7 +8,7 @@ import Controle from '../components/nortes/Controle';
 import getNorte from '../utils/getNorte';
 
 function Norte() {
-  const { points } = useContext(PointsContext);
+  const points = JSON.parse(localStorage.getItem('points'));
   const norte = getNorte(points);
 
   const nortePage = () => {
