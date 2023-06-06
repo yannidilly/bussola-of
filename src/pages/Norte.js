@@ -1,12 +1,15 @@
-// SP, PG, EMD, CD, CF
+import React, { useContext } from 'react';
+import PointsContext from '../context/PointsContext';
 import Seguranca from '../components/nortes/Seguranca';
 import Prazer from '../components/nortes/Prazer';
 import EmocoesMomentaneas from '../components/nortes/EmocoesMomentaneas';
 import Conformidade from '../components/nortes/Conformidade';
 import Controle from '../components/nortes/Controle';
+import getNorte from '../utils/getNorte';
 
 function Norte() {
-  const norte = 'SP';
+  const { points } = useContext(PointsContext);
+  const norte = getNorte(points);
 
   const nortePage = () => {
     let page;
