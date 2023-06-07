@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Seguranca from '../components/nortes/Seguranca';
-import Prazer from '../components/nortes/Prazer';
-import EmocoesMomentaneas from '../components/nortes/EmocoesMomentaneas';
-import Conformidade from '../components/nortes/Conformidade';
-import Controle from '../components/nortes/Controle';
-import getNorte from '../utils/getNorte';
+import Seguranca from './Seguranca';
+import Prazer from './Prazer';
+import EmocoesMomentaneas from './EmocoesMomentaneas';
+import Conformidade from './Conformidade';
+import Controle from './Controle';
+import getNorte from '../../utils/getNorte';
 import { useHistory } from 'react-router-dom';
 
 function Norte() {

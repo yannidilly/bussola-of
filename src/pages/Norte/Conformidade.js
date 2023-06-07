@@ -1,19 +1,18 @@
 import React from "react";
-import PrazerPDF from '../../pdfsNorte/Prazer.pdf'
-import Points from "../Points";
+import Points from "../../components/Points";
+import ConformidadePDF from '../../pdfsNorte/Conformidade.pdf';
 
-function Prazer() {
-  
+function Conformidade() {
   return (
-    <div className="norte-prazer">
-      <h1>Prazer</h1>
+    <div className="norte-conformidade">
+      <h1>Conformidade</h1>
       <div className="video-bussola">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ZiE5zjxwstI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
       <Points />
-      <a href={ PrazerPDF } target="_blank" rel="noreferrer">Baixar resumo</a>
+      <a href={ ConformidadePDF } target="_blank" rel="noreferrer">Baixar resumo</a>
     </div>
   );
 }
 
-export default Prazer;
+export default Conformidade;

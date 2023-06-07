@@ -3,11 +3,11 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Bussola from './Bussola/index';
 import Norte from './Norte';
 import Pesquisa from './Pesquisa';
-import Seguranca from '../components/nortes/Seguranca';
-import Prazer from '../components/nortes/Prazer';
-import EmocoesMomentaneas from '../components/nortes/EmocoesMomentaneas';
-import Conformidade from '../components/nortes/Conformidade';
-import Controle from '../components/nortes/Controle';
+import Seguranca from './Norte/Seguranca';
+import Prazer from './Norte/Prazer';
+import EmocoesMomentaneas from './Norte/EmocoesMomentaneas';
+import Conformidade from './Norte/Conformidade';
+import Controle from './Norte/Controle';
 
 function Pages() {
   return (
