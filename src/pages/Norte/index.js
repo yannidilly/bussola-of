@@ -6,6 +6,7 @@ import Conformidade from './Conformidade';
 import Controle from './Controle';
 import getNorte from '../../utils/getNorte';
 import { useHistory } from 'react-router-dom';
+import '../../styles/pages/Norte.css';
 
 function Norte() {
   const [loading, setLoading] = useState(true);
@@ -57,11 +58,11 @@ function Norte() {
 
 
   return (
-    <>
+    <div className='norte-page'>
       {
         nortePage()
       }
-    </>
+    </div>
   );
 }
 
