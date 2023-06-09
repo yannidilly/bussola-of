@@ -1,0 +1,57 @@
+.norte-page {
+  background-image: url('../images/bussola-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.norte-page h1 {
+  font-size: 50px;
+}
+
+.video-bussola iframe {
+  border-radius: 20px;
+  width: 672px;
+  height: 378px;
+}
+
+.norte-page .download {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--light);
+  padding: 8px 18px;
+  text-decoration: none;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) and (min-width: 500px) {
+  .video-bussola iframe {
+    border-radius: 20px;
+    width: 392px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .video-bussola iframe {
+    border-radius: 20px;
+    width: 280px;
+    height: 158px;
+  }
+}
+
+.points {
+  font-size: larger;
+}
+
+.points a {
+  color: white;
+}
