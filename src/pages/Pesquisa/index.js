@@ -16,10 +16,7 @@ function Pesquisa() {
 
   return (
     <div className='pesquisa-page'>
-      <h1>Bússola</h1>
-      <Form>
-
-      </Form>
+      <Form />
     </div>
   );
 }

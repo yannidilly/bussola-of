@@ -1,0 +1,12 @@
+.pesquisa-page {
+  background-image: url('../images/bussola-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
