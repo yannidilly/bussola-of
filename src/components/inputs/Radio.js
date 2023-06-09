@@ -16,7 +16,7 @@ function Radio({ id, index }) {
   }
 
   return (
-    <div style={ { display: visible } }>
+    <div className='radio-question-component' style={ { display: visible } }>
       <h2>{ label }</h2>
       <div>
               {
