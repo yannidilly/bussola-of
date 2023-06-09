@@ -19,9 +19,24 @@ function ControlFormButtons({ disable } = { disable: false }) {
     }
   };
   return (
-    <div>
-      <button type="button" onClick={ buttonClick } value='prev'>Anterior</button>
-      <button type="button" onClick={ buttonClick } value='next' disabled={ disable }>Próxima</button>
+    <div className='pesquisa-button-div'>
+      <button
+        className='pesquisa-button'
+        type="button"
+        onClick={ buttonClick }
+        value='prev'
+      >
+        Anterior
+      </button>
+      <button
+        className='pesquisa-button'
+        type="button"
+        onClick={ buttonClick }
+        value='next'
+        disabled={ disable }
+      >
+        Próxima
+      </button>
     </div>
   );
 }
