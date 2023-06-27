@@ -31,7 +31,7 @@ function Form() {
                 Você terminou todas as perguntas, clique no botão abaixo para ver seu resultado.
               </p>
               <p className='finish-text'>
-                Obs: ao clicar no botão abaixo você concorda com nossa política de privacidade (link)
+                Obs: ao clicar no botão abaixo você concorda com nossa <a href='/' target='_blank'>Política de Privacidade</a>
               </p>
               <button className='finish-bussola-form-button' type='submit'>Finalizar</button>
             </div>
