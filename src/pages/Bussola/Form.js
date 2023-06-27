@@ -38,7 +38,7 @@ function Form() {
                 <p>
                   Lembre-se de que conhecer seu Norte é o primeiro passo para tomar decisões mais informadas e alcançar seus objetivos financeiros.
                 </p>
-                <button className='finish-bussola-form-button' type='submit'>Próximo Passo</button>
+                <button type='submit'>Próximo Passo</button>
               </div>
             ) : (
               <></>

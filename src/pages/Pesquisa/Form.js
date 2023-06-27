@@ -5,6 +5,7 @@ import pesquisaFormData from '../../utils/pesquisaForm.json';
 import Questions from '../../components/Questions';
 import PesquisaContext from '../../context/PesquisaContext';
 import QuestionContext from '../../context/QuestionContext';
+import '../../styles/pages/Pesquisa.css';
 
 function Form() {
   const { question: { currentIndex } } = useContext(QuestionContext);
@@ -25,8 +26,13 @@ function Form() {
         <Questions fields={ fields }/>
         {
           (currentIndex >= fields.length) ? (
-            <div>
-              <p>Você terminou todas as perguntas, clique no botão abaixo para ver seu resultado. Obs: ao clicar no botão abaixo você concorda com nossa política de privacidade (link)</p>
+            <div className='pesquisa-page'>
+              <p className='finish-text'>
+                Você terminou todas as perguntas, clique no botão abaixo para ver seu resultado.
+              </p>
+              <p className='finish-text'>
+                Obs: ao clicar no botão abaixo você concorda com nossa política de privacidade (link)
+              </p>
               <button className='finish-bussola-form-button' type='submit'>Finalizar</button>
             </div>
           ) : (

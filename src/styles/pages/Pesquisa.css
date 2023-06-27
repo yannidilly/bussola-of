@@ -1,0 +1,61 @@
+.pesquisa-page {
+  background-image: url('../images/bussola-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pesquisa-page .finish-text {
+  padding: 0px 30px;
+}
+
+.radio-question-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-question-component h2 {
+  padding: 0px 30px;
+}
+
+.radio-question-component-options {
+  padding: 0px 30px;
+}
+
+.short-answer-input {
+  width: 100%;
+}
+
+.long-question-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.long-question-component h2 {
+  padding: 0px 30px;
+}
+
+.long-answer-input {
+  width: 85vw;
+  min-height: 100px;
+}
+
+.pesquisa-button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.pesquisa-button {
+  margin: 15px;
+}

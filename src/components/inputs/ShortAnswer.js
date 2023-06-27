@@ -25,6 +25,7 @@ function ShortAnswer({ id, index }) {
         type='text'
         {...register()}
         onChange={ onInputChange }
+        className='short-answer-input'
         />
       <ControlFormButtons disable={ !(filled || !required) }/>
     </div>
