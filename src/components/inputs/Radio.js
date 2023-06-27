@@ -21,14 +21,14 @@ function Radio({ id, index }) {
       <div className='radio-question-component-options'>
               {
                 options.map((option) => (
-                  <div key={option.id}>
+                  <div key={option.id} className='option-div'>
                     <input
                       type='radio'
                       {...option.registerOption()}
                       onChange={ onInputSelect }
                       id={option.id}
                     />
-                    <label htmlFor={option.id}>{ option.label }</label>
+                    <label className='radio-question-label' htmlFor={option.id}>{ option.label }</label>
                   </div>
                 ))
               }

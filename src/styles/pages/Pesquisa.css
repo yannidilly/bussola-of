@@ -12,7 +12,12 @@
 }
 
 .pesquisa-page .finish-text {
+  font-size: 20px;
   padding: 0px 30px;
+}
+
+.pesquisa-page .finish-text a {
+  color: white;
 }
 
 .radio-question-component {
@@ -28,6 +33,16 @@
 
 .radio-question-component-options {
   padding: 0px 30px;
+}
+
+.option-div {
+  margin: 4px 0px;
+}
+
+.radio-question-label {
+  font-size: 16px;
+  padding-left: 5px;
+  font-family: var(--text);
 }
 
 .short-answer-input {
