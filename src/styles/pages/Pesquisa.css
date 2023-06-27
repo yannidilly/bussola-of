@@ -6,8 +6,13 @@
   color: var(--light);
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.pesquisa-page .finish-text {
+  padding: 0px 30px;
 }
 
 .radio-question-component {

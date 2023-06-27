@@ -27,7 +27,12 @@ function Form() {
         {
           (currentIndex >= fields.length) ? (
             <div className='pesquisa-page'>
-              <p>Você terminou todas as perguntas, clique no botão abaixo para ver seu resultado. Obs: ao clicar no botão abaixo você concorda com nossa política de privacidade (link)</p>
+              <p className='finish-text'>
+                Você terminou todas as perguntas, clique no botão abaixo para ver seu resultado.
+              </p>
+              <p className='finish-text'>
+                Obs: ao clicar no botão abaixo você concorda com nossa política de privacidade (link)
+              </p>
               <button className='finish-bussola-form-button' type='submit'>Finalizar</button>
             </div>
           ) : (
