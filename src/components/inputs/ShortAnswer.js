@@ -19,12 +19,15 @@ function ShortAnswer({ id, index }) {
   const visible = (index === currentIndex) ? '' : 'none';
 
   return (
-    <div style={ { display: visible } }>
+    <div
+      style={ { display: visible } }
+    >
       <h2>{label}</h2>
       <input
         type='text'
         {...register()}
         onChange={ onInputChange }
+        className='short-answer-input'
         />
       <ControlFormButtons disable={ !(filled || !required) }/>
     </div>

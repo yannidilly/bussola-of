@@ -18,7 +18,7 @@ function Radio({ id, index }) {
   return (
     <div className='radio-question-component' style={ { display: visible } }>
       <h2>{ label }</h2>
-      <div>
+      <div className='radio-question-component-options'>
               {
                 options.map((option) => (
                   <div key={option.id}>
