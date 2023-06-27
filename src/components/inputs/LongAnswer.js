@@ -19,12 +19,13 @@ function LongAnswer({ id, index }) {
   const visible = (index === currentIndex) ? '' : 'none';
 
   return (
-    <div style={ { display: visible } }>
+    <div style={ { display: visible } } className='long-question-component'>
       <h2>{label}</h2>
-      <input
+      <textarea
         type='text'
         {...register()}
         onChange={ onInputChange }
+        className='long-answer-input'
         />
       <ControlFormButtons disable={ !(filled || !required) }/>
     </div>
