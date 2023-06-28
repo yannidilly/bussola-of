@@ -12,14 +12,14 @@ import Controle from './Norte/Controle';
 function Pages() {
   return (
     <BrowserRouter>
-      <Route exact path="/bussola/" component={ Bussola } />
-      <Route exact path="/bussola/norte" component={ Norte } />
-      <Route exact path="/bussola/pesquisa" component={ Pesquisa } />
-      <Route exact path="/bussola/norte/SP" component={ Seguranca }/>
-      <Route exact path="/bussola/norte/PG" component={ Prazer }/>
-      <Route exact path="/bussola/norte/EMD" component={ Momento }/>
-      <Route exact path="/bussola/norte/CD" component={ Conformidade }/>
-      <Route exact path="/bussola/norte/CF" component={ Controle }/>
+      <Route exact path="/" component={ Bussola } />
+      <Route exact path="/norte" component={ Norte } />
+      <Route exact path="/pesquisa" component={ Pesquisa } />
+      <Route exact path="/norte/SP" component={ Seguranca }/>
+      <Route exact path="/norte/PG" component={ Prazer }/>
+      <Route exact path="/norte/EMD" component={ Momento }/>
+      <Route exact path="/norte/CD" component={ Conformidade }/>
+      <Route exact path="/norte/CF" component={ Controle }/>
     </BrowserRouter>
   );
 }
