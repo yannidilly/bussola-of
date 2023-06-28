@@ -59,3 +59,11 @@
 .points a {
   color: white;
 }
+
+@media (min-width: 769px) {
+  .first-points-section, .secund-points-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+  }
+}
