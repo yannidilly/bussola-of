@@ -7,10 +7,10 @@ function Pesquisa() {
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('pesquisa')) !== null) {
-      history.push('/norte');
+      history.push('/bussola-of/norte');
     }
     if (!localStorage.getItem('points')) {
-      history.push('/');
+      history.push('/bussola-of');
     }
   });
 

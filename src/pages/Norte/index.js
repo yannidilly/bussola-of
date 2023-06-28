@@ -14,7 +14,7 @@ function Norte() {
 
   useEffect(() => {
     if (!localStorage.getItem('pesquisa') || !localStorage.getItem('points')) {
-      history.push('/');
+      history.push('/bussola-of');
     } else {
       setLoading(false);
     }

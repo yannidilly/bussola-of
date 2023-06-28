@@ -11,7 +11,7 @@ function Bussola() {
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('points')) !== null) {
-      history.push('/pesquisa');
+      history.push('/bussola-of/pesquisa');
     }
   });
 
