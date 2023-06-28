@@ -17,7 +17,7 @@ function Form() {
   const onSubmit = async (data) => {
     localStorage.setItem('pesquisa', JSON.stringify('preenchida'));
     await methods.submitToGoogleForms(data);
-    history.push('/norte');
+    history.push('/bussola-of/norte');
   };
 
   return (

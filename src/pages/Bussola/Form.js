@@ -21,7 +21,7 @@ function Form() {
     localStorage.setItem('points', JSON.stringify(formatedData));
     await setPoints(formatedData);
     await methods.submitToGoogleForms(data);
-    history.push('/pesquisa');
+    history.push('/bussola-of/pesquisa');
   };
 
   return (
