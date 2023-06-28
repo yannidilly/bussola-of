@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bussola/static/css/main.a6f31359.css",
-    "main.js": "/bussola/static/js/main.c2aa2ff6.js",
+    "main.js": "/bussola/static/js/main.51b992c3.js",
     "static/js/787.7c230a5a.chunk.js": "/bussola/static/js/787.7c230a5a.chunk.js",
     "static/media/Momento.pdf": "/bussola/static/media/Momento.d398a0e9d46157985531.pdf",
     "static/media/Seguranca.pdf": "/bussola/static/media/Seguranca.9047ab908232860b81cf.pdf",
@@ -10,11 +10,11 @@
     "static/media/bussola-bg.jpg": "/bussola/static/media/bussola-bg.918ed44c548fdf6ae203.jpg",
     "index.html": "/bussola/index.html",
     "main.a6f31359.css.map": "/bussola/static/css/main.a6f31359.css.map",
-    "main.c2aa2ff6.js.map": "/bussola/static/js/main.c2aa2ff6.js.map",
+    "main.51b992c3.js.map": "/bussola/static/js/main.51b992c3.js.map",
     "787.7c230a5a.chunk.js.map": "/bussola/static/js/787.7c230a5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6f31359.css",
-    "static/js/main.c2aa2ff6.js"
+    "static/js/main.51b992c3.js"
   ]
 }
