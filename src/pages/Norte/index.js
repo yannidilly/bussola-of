@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Seguranca from './Seguranca';
 import Prazer from './Prazer';
-import EmocoesMomentaneas from './EmocoesMomentaneas';
+import Momento from './Momento';
 import Conformidade from './Conformidade';
 import Controle from './Controle';
 import getNorte from '../../utils/getNorte';
@@ -37,7 +37,7 @@ function Norte() {
         page = <Prazer />
         break;
       case 'EMD':
-        page = <EmocoesMomentaneas />
+        page = <Momento />
         break;
       case 'CD':
         page = <Conformidade />
@@ -58,11 +58,11 @@ function Norte() {
 
 
   return (
-    <div className='norte-page'>
+    <>
       {
         nortePage()
       }
-    </div>
+    </>
   );
 }
 
