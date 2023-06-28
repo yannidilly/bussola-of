@@ -74,3 +74,21 @@
 .pesquisa-button {
   margin: 15px;
 }
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .long-question-component textarea {
+    width: 70%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .long-question-component textarea {
+    width: 60%;
+  }
+}
+
+@media (min-width: 801px) {
+  .long-question-component textarea {
+    width: 55%;
+  }
+}
