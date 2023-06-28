@@ -18,6 +18,9 @@ function ControlFormButtons({ disable } = { disable: false }) {
       });
     }
   };
+
+  const visible = (currentIndex === 0) ? 'hidden' : 'visible';
+
   return (
     <div className='pesquisa-button-div'>
       <button
@@ -25,6 +28,7 @@ function ControlFormButtons({ disable } = { disable: false }) {
         type="button"
         onClick={ buttonClick }
         value='prev'
+        style={ { visibility: visible } }
       >
         Anterior
       </button>
